@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hubungi Kami - Kenzie Tech</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar">
@@ -41,13 +44,14 @@
     <section class="section-padding">
         <div class="container">
             <div class="contact-grid">
-                
+
                 <!-- Contact Info & Quick Action -->
                 <div class="contact-info">
                     <div class="card p-4">
                         <h3>Informasi Kontak</h3>
-                        <p class="mb-4">Jangan ragu untuk menghubungi kami melalui form di samping, atau gunakan akses cepat di bawah ini.</p>
-                        
+                        <p class="mb-4">Jangan ragu untuk menghubungi kami melalui form di samping, atau gunakan akses
+                            cepat di bawah ini.</p>
+
                         <ul class="info-list">
                             <li>
                                 <span class="icon"><i class="ph-duotone ph-map-pin"></i></span>
@@ -74,9 +78,10 @@
 
                         <hr class="divider">
 
-                        <h4>Butuh Respon Cepat?</h4>
+
                         <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-whatsapp w-100 mt-2">
-                            <i class="ph-bold ph-whatsapp-logo" style="margin-right:8px; font-size:1.2rem;"></i> Hubungi via WhatsApp
+                            <i class="ph-bold ph-whatsapp-logo" style="margin-right:8px; font-size:1.2rem;"></i> Hubungi
+                            via WhatsApp
                         </a>
                     </div>
                 </div>
@@ -88,26 +93,30 @@
                         <form id="contactForm" novalidate>
                             <div class="form-group">
                                 <label for="name">Nama Lengkap</label>
-                                <input type="text" id="name" name="name" class="form-control" placeholder="Masukkan nama Anda" required>
+                                <input type="text" id="name" name="name" class="form-control"
+                                    placeholder="Masukkan nama Anda" required>
                                 <div class="error-feedback">Nama tidak boleh kosong</div>
                             </div>
                             <div class="form-group">
                                 <label for="email">Alamat Email</label>
-                                <input type="email" id="email" name="email" class="form-control" placeholder="contoh@email.com" required>
+                                <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="contoh@email.com" required>
                                 <div class="error-feedback">Masukkan email yang valid</div>
                             </div>
                             <div class="form-group">
                                 <label for="subject">Subjek</label>
-                                <input type="text" id="subject" name="subject" class="form-control" placeholder="Apa yang bisa kami bantu?" required>
+                                <input type="text" id="subject" name="subject" class="form-control"
+                                    placeholder="Apa yang bisa kami bantu?" required>
                                 <div class="error-feedback">Subjek wajib diisi</div>
                             </div>
                             <div class="form-group">
                                 <label for="message">Pesan Anda</label>
-                                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Tuliskan detail pesan Anda di sini..." required></textarea>
+                                <textarea id="message" name="message" class="form-control" rows="5"
+                                    placeholder="Tuliskan detail pesan Anda di sini..." required></textarea>
                                 <div class="error-feedback">Pesan tidak boleh kosong</div>
                             </div>
                             <button type="submit" class="btn btn-primary w-100">Kirim Pesan</button>
-                            
+
                             <div id="formSuccess" class="alert alert-success mt-3" style="display: none;">
                                 Pesan Anda berhasil dikirim! Tim kami akan segera merespons.
                             </div>
@@ -141,4 +150,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

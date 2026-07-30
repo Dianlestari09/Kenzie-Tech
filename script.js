@@ -115,4 +115,43 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // 4. Lightbox Modal for Step Images
+    const stepImages = document.querySelectorAll('.step-img');
+    if (stepImages.length > 0) {
+        // Create modal elements
+        const modal = document.createElement('div');
+        modal.className = 'lightbox-modal';
+        
+        const closeBtn = document.createElement('span');
+        closeBtn.className = 'lightbox-close';
+        closeBtn.innerHTML = '&times;';
+        
+        const modalImg = document.createElement('img');
+        modalImg.className = 'lightbox-content';
+        
+        modal.appendChild(closeBtn);
+        modal.appendChild(modalImg);
+        document.body.appendChild(modal);
+
+        // Open modal on image click
+        stepImages.forEach(img => {
+            img.addEventListener('click', () => {
+                modalImg.src = img.src;
+                modal.classList.add('active');
+            });
+        });
+
+        // Close modal on close button click
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+
+        // Close modal on outside click
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
+    }
 });
