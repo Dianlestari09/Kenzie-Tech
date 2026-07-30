@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - Kenzie Tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Kenzie<span>Tech</span></a>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="printera.html">PrinterA</a>
+                <a href="printerl.html">PrinterL</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <header class="page-header bg-soft">
+        <div class="container text-center">
+            <h1>Hubungi Kami</h1>
+            <p>Punya pertanyaan atau butuh bantuan teknis? Tim kami siap membantu Anda.</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Contact Info & Quick Action -->
+                <div class="contact-info">
+                    <div class="card p-4">
+                        <h3>Informasi Kontak</h3>
+                        <p class="mb-4">Jangan ragu untuk menghubungi kami melalui form di samping, atau gunakan akses cepat di bawah ini.</p>
+                        
+                        <ul class="info-list">
+                            <li>
+                                <span class="icon"><i class="ph-duotone ph-map-pin"></i></span>
+                                <div>
+                                    <strong>Alamat Kantor</strong>
+                                    <p>Gedung Teknologi No. 45<br>Jakarta Selatan, Indonesia 12345</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="ph-duotone ph-envelope"></i></span>
+                                <div>
+                                    <strong>Email Support</strong>
+                                    <p>support@kenzietech.com</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="ph-duotone ph-phone"></i></span>
+                                <div>
+                                    <strong>Telepon</strong>
+                                    <p>+62 21 5555 8888</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <hr class="divider">
+
+                        <h4>Butuh Respon Cepat?</h4>
+                        <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-whatsapp w-100 mt-2">
+                            <i class="ph-bold ph-whatsapp-logo" style="margin-right:8px; font-size:1.2rem;"></i> Hubungi via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <div class="card p-4">
+                        <h3 class="mb-3">Kirim Pesan</h3>
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Masukkan nama Anda" required>
+                                <div class="error-feedback">Nama tidak boleh kosong</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Alamat Email</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="contoh@email.com" required>
+                                <div class="error-feedback">Masukkan email yang valid</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subjek</label>
+                                <input type="text" id="subject" name="subject" class="form-control" placeholder="Apa yang bisa kami bantu?" required>
+                                <div class="error-feedback">Subjek wajib diisi</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Pesan Anda</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Tuliskan detail pesan Anda di sini..." required></textarea>
+                                <div class="error-feedback">Pesan tidak boleh kosong</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Kirim Pesan</button>
+                            
+                            <div id="formSuccess" class="alert alert-success mt-3" style="display: none;">
+                                Pesan Anda berhasil dikirim! Tim kami akan segera merespons.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Kenzie<span>Tech</span></a>
+                <p>Solusi pencetakan Android paling inovatif untuk bisnis Anda.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigasi</h4>
+                <a href="index.html">Home</a>
+                <a href="printera.html">PrinterA</a>
+                <a href="printerl.html">PrinterL</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kenzie Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
