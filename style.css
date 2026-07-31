@@ -577,7 +577,7 @@ ul {
 }
 .footer-container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     gap: 48px;
     margin-bottom: 48px;
 }
@@ -590,10 +590,14 @@ ul {
     margin-bottom: 20px;
     color: var(--secondary);
 }
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: center;
+}
 .footer-links a {
-    display: block;
     color: var(--text-muted);
-    margin-bottom: 12px;
 }
 .footer-links a:hover {
     color: var(--primary);
