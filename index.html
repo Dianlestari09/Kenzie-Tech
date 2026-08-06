@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KenzieTech - Solusi driver printer kasir Android terpraktis. Cetak struk, dokumen, dan gambar dari HP ke printer thermal Bluetooth dengan mudah.">
     <title>Solusi Cetak Kasir Android - Home</title>
+    <!-- Preload Hero Image for faster LCP -->
+    <link rel="preload" as="image" href="assets/image.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,6 +35,7 @@
         </div>
     </nav>
 
+    <main>
     <!-- Hero Section -->
     <section class="hero">
         <div class="container hero-container">
@@ -45,7 +49,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="assets/image.png" alt="Kenzie Tech Hero Image"
+                <img src="assets/image.png" alt="Kenzie Tech Hero Image" width="600" height="400" fetchpriority="high"
                     style="width: 100%; max-width: 600px; height: auto; border-radius: 24px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15); display: block; margin: 0 auto;">
             </div>
         </div>
@@ -103,8 +107,8 @@
                 </div>
                 <div class="image-content" style="display: flex; justify-content: center; align-items: center;">
                     <img src="https://placehold.co/600x400/f8fafc/334155?text=Mockup+Struk+Self-Test%5Cn(Highlight+MAC+Address)"
-                        alt="Mockup Self Test Print"
-                        style="width: 100%; max-width: 400px; border-radius: 16px; box-shadow: var(--shadow-md);">
+                        alt="Mockup Self Test Print" width="600" height="400" loading="lazy"
+                        style="width: 100%; max-width: 400px; height: auto; border-radius: 16px; box-shadow: var(--shadow-md);">
                 </div>
             </div>
         </div>
@@ -118,50 +122,51 @@
                 <div class="card feature-item" style="padding: 24px; text-align: left;">
                     <img src="assets/fitur-autoprint.png"
                         onerror="this.src='https://placehold.co/400x250/f8fafc/94a3b8?text=Screenshot+Auto-Print'"
-                        alt="Screenshot Auto Print"
+                        alt="Screenshot Auto Print" width="400" height="250" loading="lazy"
                         style="width: 100%; height: 160px; object-fit: contain; border-radius: 8px; margin-bottom: 20px; background: #f8fafc; border: 1px solid #e2e8f0;">
-                    <h4 style="margin-bottom: 12px; font-size: 1.125rem;"><i class="ph-fill ph-lightning"
+                    <h3 style="margin-bottom: 12px; font-size: 1.125rem;"><i class="ph-fill ph-lightning"
                             style="color: var(--primary); margin-right: 8px; vertical-align: middle;"></i>Cetak Langsung
-                    </h4>
+                    </h3>
                     <p style="color: var(--text-muted); font-size: 0.95rem;">Sekali klik icon printer, cetak langsung
                         berjalan tanpa konfirmasi ulang.</p>
                 </div>
                 <div class="card feature-item" style="padding: 24px; text-align: left;">
                     <img src="assets/fitur-lebarkertas.png"
                         onerror="this.src='https://placehold.co/400x250/f8fafc/94a3b8?text=Screenshot+Lebar+Kertas'"
-                        alt="Screenshot Lebar Kertas"
+                        alt="Screenshot Lebar Kertas" width="400" height="250" loading="lazy"
                         style="width: 100%; height: 160px; object-fit: contain; border-radius: 8px; margin-bottom: 20px; background: #f8fafc; border: 1px solid #e2e8f0;">
-                    <h4 style="margin-bottom: 12px; font-size: 1.125rem;"><i class="ph-fill ph-ruler"
+                    <h3 style="margin-bottom: 12px; font-size: 1.125rem;"><i class="ph-fill ph-ruler"
                             style="color: var(--primary); margin-right: 8px; vertical-align: middle;"></i>Presisi Kertas
-                    </h4>
+                    </h3>
                     <p style="color: var(--text-muted); font-size: 0.95rem;">Dukungan Kertas lebar 80mm dengan area
                         cetak maksimal 72mm.</p>
                 </div>
                 <div class="card feature-item" style="padding: 24px; text-align: left;">
                     <img src="assets/fitur-bahasa.png"
                         onerror="this.src='https://placehold.co/400x250/f8fafc/94a3b8?text=Screenshot+Bahasa'"
-                        alt="Screenshot Bahasa"
+                        alt="Screenshot Bahasa" width="400" height="250" loading="lazy"
                         style="width: 100%; height: 160px; object-fit: contain; border-radius: 8px; margin-bottom: 20px; background: #f8fafc; border: 1px solid #e2e8f0;">
-                    <h4 style="margin-bottom: 12px; font-size: 1.125rem;"><i class="ph-fill ph-globe"
+                    <h3 style="margin-bottom: 12px; font-size: 1.125rem;"><i class="ph-fill ph-globe"
                             style="color: var(--primary); margin-right: 8px; vertical-align: middle;"></i>60 Pilihan
-                        Bahasa</h4>
+                        Bahasa</h3>
                     <p style="color: var(--text-muted); font-size: 0.95rem;">Mendukung lebih dari 60 pilihan bahasa
                         untuk kemudahan navigasi.</p>
                 </div>
                 <div class="card feature-item" style="padding: 24px; text-align: left;">
                     <img src="assets/fitur-androidgo.png"
                         onerror="this.src='https://placehold.co/400x250/f8fafc/94a3b8?text=Screenshot+Android+GO'"
-                        alt="Screenshot Android GO"
+                        alt="Screenshot Android GO" width="400" height="250" loading="lazy"
                         style="width: 100%; height: 160px; object-fit: contain; border-radius: 8px; margin-bottom: 20px; background: #f8fafc; border: 1px solid #e2e8f0;">
-                    <h4 style="margin-bottom: 12px; font-size: 1.125rem;"><i class="ph-fill ph-shield-check"
+                    <h3 style="margin-bottom: 12px; font-size: 1.125rem;"><i class="ph-fill ph-shield-check"
                             style="color: var(--primary); margin-right: 8px; vertical-align: middle;"></i>Izin Android
-                        GO</h4>
+                        GO</h3>
                     <p style="color: var(--text-muted); font-size: 0.95rem;">Penyesuaian izin khusus untuk ekosistem
                         Android GO secara aman.</p>
                 </div>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
