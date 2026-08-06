@@ -116,8 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 4. Lightbox Modal for Step Images
-    const stepImages = document.querySelectorAll('.step-img');
+    // 4. Lightbox Modal for Images
+    const stepImages = document.querySelectorAll('.step-img, .card img, .image-content img');
     if (stepImages.length > 0) {
         // Create modal elements
         const modal = document.createElement('div');
@@ -136,6 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Open modal on image click
         stepImages.forEach(img => {
+            img.style.cursor = 'zoom-in'; // Added cursor style for UX
             img.addEventListener('click', () => {
                 modalImg.src = img.src;
                 modal.classList.add('active');
