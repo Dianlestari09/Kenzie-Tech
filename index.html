@@ -4,20 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="KenzieTech - Solusi driver printer kasir Android terpraktis. Cetak struk, dokumen, dan gambar dari HP ke printer thermal Bluetooth dengan mudah.">
+    <meta name="description"
+        content="KenzieTech - Solusi driver printer kasir Android terpraktis. Cetak struk, dokumen, dan gambar dari HP ke printer thermal Bluetooth dengan mudah.">
     <title>Solusi Cetak Kasir Android - Home</title>
     <!-- Preload Hero Image for faster LCP -->
     <link rel="preload" as="image" href="assets/image.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Async Google Fonts -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"></noscript>
-    
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+    </noscript>
+
     <!-- Async Phosphor Icons -->
-    <link rel="preload" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
         <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
@@ -25,746 +34,898 @@
     </noscript>
 
     <style>
-/* === CSS VARIABLES & RESET === */
-:root {
-    --primary: #15803d;
-    --primary-hover: #166534;
-    --secondary: #0f172a;
-    --bg-main: #f8fafc;
-    --bg-card: #ffffff;
-    --text-main: #0f172a;
-    --text-muted: #64748b;
-    --success: #059669;
-    --error: #dc2626;
-    --wa-color: #25D366;
-    
-    --font-main: 'Plus Jakarta Sans', sans-serif;
-    
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    
-    --radius: 12px;
-    --transition: all 0.3s ease;
-}
+        /* === CSS VARIABLES & RESET === */
+        :root {
+            --primary: #15803d;
+            --primary-hover: #166534;
+            --secondary: #0f172a;
+            --bg-main: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --success: #059669;
+            --error: #dc2626;
+            --wa-color: #25D366;
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+            --font-main: 'Plus Jakarta Sans', sans-serif;
 
-body {
-    font-family: var(--font-main);
-    background-color: var(--bg-main);
-    color: var(--text-main);
-    line-height: 1.6;
-    overflow-x: hidden;
-}
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: var(--transition);
-}
+            --radius: 12px;
+            --transition: all 0.3s ease;
+        }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-ul {
-    list-style: none;
-}
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
 
-/* === UTILITIES === */
-.section-padding { padding: 80px 0; }
-.bg-soft { background-color: #f8fafc; }
-.bg-primary { 
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
-    position: relative;
-    overflow: hidden;
-}
-/* Subtle pattern overlay for primary background */
-.bg-primary::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-    background-size: 20px 20px;
-    pointer-events: none;
-}
-.bg-primary > * { position: relative; z-index: 1; }
-.text-white { color: #ffffff; }
-.text-light { color: #e2e8f0; }
-.text-center { text-align: center; }
-.mt-4 { margin-top: 32px; }
-.mb-3 { margin-bottom: 16px; }
-.mb-4 { margin-bottom: 32px; }
-.w-100 { width: 100%; }
-.p-4 { padding: 32px; }
-.align-center { align-items: center; }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
 
-.section-title {
-    font-size: 2.25rem;
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: var(--secondary);
-}
-.subtitle-text {
-    font-size: 1.125rem;
-    color: var(--text-muted);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
+        ul {
+            list-style: none;
+        }
 
-/* === BUTTONS === */
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 24px;
-    font-weight: 600;
-    border-radius: 8px;
-    cursor: pointer;
-    border: none;
-    transition: var(--transition);
-    font-size: 1rem;
-}
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
 
-.btn-primary {
-    background-color: var(--primary);
-    color: white;
-}
-.btn-primary:hover {
-    background-color: var(--primary-hover);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-}
+        /* === UTILITIES === */
+        .section-padding {
+            padding: 80px 0;
+        }
 
-.btn-secondary {
-    background-color: white;
-    color: var(--secondary);
-    border: 1px solid #e2e8f0;
-}
-.btn-secondary:hover {
-    background-color: #f8fafc;
-    border-color: #cbd5e1;
-    transform: translateY(-2px);
-}
+        .bg-soft {
+            background-color: #f8fafc;
+        }
 
-.btn-outline {
-    background-color: transparent;
-    color: var(--secondary);
-    border: 2px solid var(--secondary);
-}
-.btn-outline:hover {
-    background-color: var(--secondary);
-    color: white;
-}
+        .bg-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+            position: relative;
+            overflow: hidden;
+        }
 
-.btn-white {
-    background-color: white;
-    color: var(--primary);
-}
-.btn-white:hover {
-    background-color: #f8fafc;
-    transform: translateY(-2px);
-}
+        /* Subtle pattern overlay for primary background */
+        .bg-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            pointer-events: none;
+        }
 
-.btn-whatsapp {
-    background-color: var(--wa-color);
-    color: white;
-}
-.btn-whatsapp:hover {
-    background-color: #1ebe5d;
-    transform: translateY(-2px);
-}
+        .bg-primary>* {
+            position: relative;
+            z-index: 1;
+        }
 
-.btn-large {
-    padding: 16px 32px;
-    font-size: 1.125rem;
-}
+        .text-white {
+            color: #ffffff;
+        }
 
-.link-btn {
-    color: var(--primary);
-    font-weight: 600;
-    display: inline-block;
-    margin-top: 16px;
-}
-.link-btn:hover {
-    color: var(--primary-hover);
-    text-decoration: underline;
-}
+        .text-light {
+            color: #e2e8f0;
+        }
 
-/* === CARD COMPONENT === */
-.card {
-    background-color: var(--bg-card);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-md);
-    transition: var(--transition);
-    border: 1px solid rgba(0,0,0,0.05);
-}
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-}
+        .text-center {
+            text-align: center;
+        }
 
-/* === NAVBAR (GLASSMORPHISM & STICKY) === */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    transition: var(--transition);
-}
+        .mt-4 {
+            margin-top: 32px;
+        }
 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 76px;
-}
+        .mb-3 {
+            margin-bottom: 16px;
+        }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--secondary);
-}
-.logo span {
-    color: var(--primary);
-}
+        .mb-4 {
+            margin-bottom: 32px;
+        }
 
-.nav-links {
-    display: flex;
-    gap: 32px;
-}
+        .w-100 {
+            width: 100%;
+        }
 
-.nav-links a {
-    font-weight: 500;
-    color: var(--text-muted);
-    padding: 8px 0;
-    position: relative;
-}
+        .p-4 {
+            padding: 32px;
+        }
 
-.nav-links a:hover {
-    color: var(--primary);
-}
+        .align-center {
+            align-items: center;
+        }
 
-.nav-links a.active {
-    color: var(--primary);
-    font-weight: 600;
-}
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: var(--secondary);
+        }
 
-.nav-links a.active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--primary);
-    border-radius: 2px;
-}
+        .subtitle-text {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-/* Hamburger Menu */
-.hamburger {
-    display: none;
-    cursor: pointer;
-    background: none;
-    border: none;
-    padding: 5px;
-}
-.hamburger .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: var(--secondary);
-    border-radius: 3px;
-}
+        /* === BUTTONS === */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+            font-size: 1rem;
+        }
 
-/* === HERO SECTION === */
-.hero {
-    padding: 160px 0 100px;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-}
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
 
-.hero-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
-    align-items: center;
-}
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
 
-.headline {
-    font-size: 3.5rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 24px;
-    color: var(--secondary);
-    letter-spacing: -0.02em;
-}
+        .btn-secondary {
+            background-color: white;
+            color: var(--secondary);
+            border: 1px solid #e2e8f0;
+        }
 
-.subheadline {
-    font-size: 1.25rem;
-    color: var(--text-muted);
-    margin-bottom: 40px;
-    line-height: 1.7;
-}
+        .btn-secondary:hover {
+            background-color: #f8fafc;
+            border-color: #cbd5e1;
+            transform: translateY(-2px);
+        }
 
-.hero-buttons {
-    display: flex;
-    gap: 16px;
-}
+        .btn-outline {
+            background-color: transparent;
+            color: var(--secondary);
+            border: 2px solid var(--secondary);
+        }
 
-.image-placeholder {
-    background: white;
-    border-radius: 24px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 5rem;
-    box-shadow: var(--shadow-lg);
-    background: linear-gradient(45deg, #ffffff, #f1f5f9);
-    border: 8px solid white;
-}
+        .btn-outline:hover {
+            background-color: var(--secondary);
+            color: white;
+        }
 
-/* === GRIDS & SECTIONS === */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-}
+        .btn-white {
+            background-color: white;
+            color: var(--primary);
+        }
 
-.product-card {
-    padding: 40px;
-    text-align: left;
-}
-.card-icon {
-    font-size: 3rem;
-    margin-bottom: 24px;
-    color: var(--primary);
-}
+        .btn-white:hover {
+            background-color: #f8fafc;
+            transform: translateY(-2px);
+        }
 
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-}
-.feature-item {
-    text-align: center;
-    padding: 32px 24px;
-}
-.feature-icon {
-    font-size: 2.5rem;
-    margin-bottom: 16px;
-    color: var(--primary);
-}
+        .btn-whatsapp {
+            background-color: var(--wa-color);
+            color: white;
+        }
 
-/* === PAGE HEADER === */
-.page-header {
-    padding: 140px 0 60px;
-    text-align: center;
-    background-color: white;
-    border-bottom: 1px solid #e2e8f0;
-}
-.page-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 16px;
-}
-.page-header p {
-    font-size: 1.125rem;
-    color: var(--text-muted);
-    max-width: 600px;
-    margin: 0 auto;
-}
+        .btn-whatsapp:hover {
+            background-color: #1ebe5d;
+            transform: translateY(-2px);
+        }
 
-/* === GRID LAYOUTS === */
-.grid-2-cols {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
-}
-.grid-3-cols {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
+        .btn-large {
+            padding: 16px 32px;
+            font-size: 1.125rem;
+        }
 
-/* === BADGES === */
-.badge {
-    display: inline-block;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 0.875rem;
-    font-weight: 600;
-    margin-bottom: 16px;
-}
-.badge-error { background-color: #fee2e2; color: #b91c1c; }
-.badge-success { background-color: #d1fae5; color: #047857; }
-.badge-pro { background-color: #fef3c7; color: #b45309; border: 1px solid #fde68a; }
+        .link-btn {
+            color: var(--primary);
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 16px;
+        }
 
-/* === PRINTERA PAGE SPECIFICS === */
-.illustration-card {
-    height: 100%;
-    min-height: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
-}
-.illustration-placeholder {
-    font-size: 3rem;
-    background: white;
-    padding: 24px 48px;
-    border-radius: 50px;
-    box-shadow: var(--shadow-sm);
-}
+        .link-btn:hover {
+            color: var(--primary-hover);
+            text-decoration: underline;
+        }
 
-.formats-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-top: 48px;
-}
-.format-card {
-    padding: 32px;
-    text-align: center;
-}
-.format-icon {
-    font-size: 2.5rem;
-    margin-bottom: 16px;
-    color: var(--primary);
-}
+        /* === CARD COMPONENT === */
+        .card {
+            background-color: var(--bg-card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
 
-/* Steps Section */
-.steps-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    position: relative;
-}
-.step-card {
-    padding: 32px 24px;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-}
-.step-number {
-    width: 48px;
-    height: 48px;
-    background-color: var(--primary);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin: 0 auto 20px;
-    box-shadow: 0 4px 10px rgba(22, 163, 74, 0.3);
-}
-.step-img {
-    width: 100%;
-    height: 200px;
-    border-radius: 8px;
-    object-fit: cover;
-    object-position: top;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
 
-/* === PRINTERL PAGE SPECIFICS === */
-.showcase-header {
-    padding: 160px 0 100px;
-    text-align: center;
-    background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
-    color: white;
-}
-.display-title {
-    font-size: 4rem;
-    font-weight: 800;
-    margin-bottom: 24px;
-    background: linear-gradient(to right, #4ade80, #10b981);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.showcase-subtitle {
-    font-size: 1.25rem;
-    color: #94a3b8;
-    max-width: 700px;
-    margin: 0 auto 32px;
-}
-.spec-card {
-    padding: 32px;
-}
-.spec-icon {
-    font-size: 2.5rem;
-    margin-bottom: 16px;
-    color: var(--primary);
-}
+        /* === NAVBAR (GLASSMORPHISM & STICKY) === */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            transition: var(--transition);
+        }
 
-/* === CONTACT PAGE SPECIFICS === */
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 48px;
-}
-.info-list li {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 24px;
-}
-.info-list .icon {
-    font-size: 1.5rem;
-    color: var(--primary);
-}
-.divider {
-    border: 0;
-    height: 1px;
-    background-color: #e2e8f0;
-    margin: 32px 0;
-}
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 76px;
+        }
 
-/* Form Styles */
-.form-group {
-    margin-bottom: 24px;
-}
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: var(--secondary);
-}
-.form-control {
-    width: 100%;
-    padding: 12px 16px;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    font-family: inherit;
-    font-size: 1rem;
-    transition: var(--transition);
-    background-color: #f8fafc;
-}
-.form-control:focus {
-    outline: none;
-    border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
-    background-color: white;
-}
-.error-feedback {
-    display: none;
-    color: var(--error);
-    font-size: 0.875rem;
-    margin-top: 6px;
-}
-.form-control.is-invalid {
-    border-color: var(--error);
-    background-color: #fef2f2;
-}
-.form-control.is-invalid + .error-feedback {
-    display: block;
-}
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--secondary);
+        }
 
-.alert {
-    padding: 16px;
-    border-radius: 8px;
-    font-weight: 500;
-}
-.alert-success {
-    background-color: #d1fae5;
-    color: #065f46;
-    border: 1px solid #a7f3d0;
-}
+        .logo span {
+            color: var(--primary);
+        }
 
-/* === FOOTER === */
-.footer {
-    background-color: white;
-    border-top: 1px solid #e2e8f0;
-    padding: 80px 0 24px;
-}
-.footer-container {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 48px;
-    margin-bottom: 48px;
-}
-.footer-brand p {
-    color: var(--text-muted);
-    margin-top: 16px;
-    max-width: 300px;
-}
-.footer-links h4, .footer-social h4 {
-    margin-bottom: 20px;
-    color: var(--secondary);
-}
-.footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    align-items: center;
-}
-.footer-links a {
-    color: var(--text-muted);
-}
-.footer-links a:hover {
-    color: var(--primary);
-}
-.social-icons {
-    display: flex;
-    gap: 16px;
-}
-.social-icons a {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #f1f5f9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--secondary);
-    font-weight: 600;
-}
-.social-icons a:hover {
-    background-color: var(--primary);
-    color: white;
-}
-.footer-bottom {
-    text-align: center;
-    padding-top: 24px;
-    border-top: 1px solid #e2e8f0;
-    color: var(--text-muted);
-}
+        .nav-links {
+            display: flex;
+            gap: 32px;
+        }
 
-/* === RESPONSIVE DESIGN === */
-@media (max-width: 1024px) {
-    .headline { font-size: 3rem; }
-    .hero-container { gap: 32px; }
-}
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-muted);
+            padding: 8px 0;
+            position: relative;
+        }
 
-@media (max-width: 768px) {
-    .hamburger { display: block; }
-    
-    .nav-links {
-        position: fixed;
-        left: -100%;
-        top: 76px;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        padding: 24px 0;
-        gap: 20px;
-    }
-    
-    .nav-links.active {
-        left: 0;
-    }
-    
-    .hamburger.active .bar:nth-child(2) { opacity: 0; }
-    .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-    .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
 
-    .hero { padding: 120px 0 60px; text-align: center; }
-    .hero-container { grid-template-columns: 1fr; }
-    .hero-buttons { justify-content: center; }
-    .image-placeholder { height: 300px; }
+        .nav-links a.active {
+            color: var(--primary);
+            font-weight: 600;
+        }
 
-    .product-grid, .features-grid, .grid-2-cols, .grid-3-cols, .contact-grid, .formats-grid {
-        grid-template-columns: 1fr;
-    }
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary);
+            border-radius: 2px;
+        }
 
-    .grid-2-cols .text-content {
-        order: 2;
-    }
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 5px;
+        }
 
-    .grid-2-cols .image-content {
-        order: 1;
-    }
-    
-    .steps-container {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-    
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 32px;
-        text-align: center;
-    }
-    .footer-brand p { margin: 16px auto 0; }
-    .social-icons { justify-content: center; }
-}
+        .hamburger .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: var(--secondary);
+            border-radius: 3px;
+        }
 
-@media (max-width: 480px) {
-    .headline { font-size: 2.25rem; }
-    .hero-buttons { flex-direction: column; width: 100%; }
-    .hero-buttons .btn { width: 100%; }
-}
+        /* === HERO SECTION === */
+        .hero {
+            padding: 160px 0 100px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
 
-/* === LIGHTBOX MODAL === */
-.lightbox-modal {
-    display: none;
-    position: fixed;
-    z-index: 2000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    align-items: center;
-    justify-content: center;
-}
-.lightbox-modal.active {
-    display: flex;
-}
-.lightbox-content {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-    object-fit: contain;
-}
-.lightbox-close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    user-select: none;
-}
-.lightbox-close:hover {
-    color: #bbb;
-}
-.step-img {
-    cursor: pointer;
-}
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
 
-</style>
+        .headline {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            color: var(--secondary);
+            letter-spacing: -0.02em;
+        }
+
+        .subheadline {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+        }
+
+        .image-placeholder {
+            background: white;
+            border-radius: 24px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            box-shadow: var(--shadow-lg);
+            background: linear-gradient(45deg, #ffffff, #f1f5f9);
+            border: 8px solid white;
+        }
+
+        /* === GRIDS & SECTIONS === */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+
+        .product-card {
+            padding: 40px;
+            text-align: left;
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 24px;
+            color: var(--primary);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 32px 24px;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            color: var(--primary);
+        }
+
+        /* === PAGE HEADER === */
+        .page-header {
+            padding: 140px 0 60px;
+            text-align: center;
+            background-color: white;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+
+        .page-header p {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* === GRID LAYOUTS === */
+        .grid-2-cols {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+        }
+
+        .grid-3-cols {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        /* === BADGES === */
+        .badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .badge-error {
+            background-color: #fee2e2;
+            color: #b91c1c;
+        }
+
+        .badge-success {
+            background-color: #d1fae5;
+            color: #047857;
+        }
+
+        .badge-pro {
+            background-color: #fef3c7;
+            color: #b45309;
+            border: 1px solid #fde68a;
+        }
+
+        /* === PRINTERA PAGE SPECIFICS === */
+        .illustration-card {
+            height: 100%;
+            min-height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+        }
+
+        .illustration-placeholder {
+            font-size: 3rem;
+            background: white;
+            padding: 24px 48px;
+            border-radius: 50px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .formats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 48px;
+        }
+
+        .format-card {
+            padding: 32px;
+            text-align: center;
+        }
+
+        .format-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            color: var(--primary);
+        }
+
+        /* Steps Section */
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            position: relative;
+        }
+
+        .step-card {
+            padding: 32px 24px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .step-number {
+            width: 48px;
+            height: 48px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 10px rgba(22, 163, 74, 0.3);
+        }
+
+        .step-img {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+            object-fit: cover;
+            object-position: top;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        /* === PRINTERL PAGE SPECIFICS === */
+        .showcase-header {
+            padding: 160px 0 100px;
+            text-align: center;
+            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+        }
+
+        .display-title {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 24px;
+            background: linear-gradient(to right, #4ade80, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .showcase-subtitle {
+            font-size: 1.25rem;
+            color: #94a3b8;
+            max-width: 700px;
+            margin: 0 auto 32px;
+        }
+
+        .spec-card {
+            padding: 32px;
+        }
+
+        .spec-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            color: var(--primary);
+        }
+
+        /* === CONTACT PAGE SPECIFICS === */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 48px;
+        }
+
+        .info-list li {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .info-list .icon {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .divider {
+            border: 0;
+            height: 1px;
+            background-color: #e2e8f0;
+            margin: 32px 0;
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--secondary);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+            background-color: #f8fafc;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+            background-color: white;
+        }
+
+        .error-feedback {
+            display: none;
+            color: var(--error);
+            font-size: 0.875rem;
+            margin-top: 6px;
+        }
+
+        .form-control.is-invalid {
+            border-color: var(--error);
+            background-color: #fef2f2;
+        }
+
+        .form-control.is-invalid+.error-feedback {
+            display: block;
+        }
+
+        .alert {
+            padding: 16px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .alert-success {
+            background-color: #d1fae5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+        }
+
+        /* === FOOTER === */
+        .footer {
+            background-color: white;
+            border-top: 1px solid #e2e8f0;
+            padding: 80px 0 24px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-brand p {
+            color: var(--text-muted);
+            margin-top: 16px;
+            max-width: 300px;
+        }
+
+        .footer-links h4,
+        .footer-social h4 {
+            margin-bottom: 20px;
+            color: var(--secondary);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 16px;
+        }
+
+        .social-icons a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #f1f5f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        .social-icons a:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 24px;
+            border-top: 1px solid #e2e8f0;
+            color: var(--text-muted);
+        }
+
+        /* === RESPONSIVE DESIGN === */
+        @media (max-width: 1024px) {
+            .headline {
+                font-size: 3rem;
+            }
+
+            .hero-container {
+                gap: 32px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                left: -100%;
+                top: 76px;
+                flex-direction: column;
+                background-color: white;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+                padding: 24px 0;
+                gap: 20px;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+
+            .hero {
+                padding: 120px 0 60px;
+                text-align: center;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .image-placeholder {
+                height: 300px;
+            }
+
+            .product-grid,
+            .features-grid,
+            .grid-2-cols,
+            .grid-3-cols,
+            .contact-grid,
+            .formats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-2-cols .text-content {
+                order: 2;
+            }
+
+            .grid-2-cols .image-content {
+                order: 1;
+            }
+
+            .steps-container {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 32px;
+                text-align: center;
+            }
+
+            .footer-brand p {
+                margin: 16px auto 0;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .headline {
+                font-size: 2.25rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+        }
+
+        /* === LIGHTBOX MODAL === */
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-modal.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            user-select: none;
+        }
+
+        .lightbox-close:hover {
+            color: #bbb;
+        }
+
+        .step-img {
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -787,136 +948,145 @@ ul {
     </nav>
 
     <main>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1 class="headline">Solusi Driver Printer Kasir Android Terpraktis</h1>
-                <p class="subheadline">Cetak struk, dokumen, dan gambar dari HP Android Anda langsung ke printer kasir
-                    tanpa ribet. Solusi cerdas untuk bisnis masa kini.</p>
-                <div class="hero-buttons">
-                    <a href="printera.html" class="btn btn-primary">Pelajari PrinterA</a>
-                    <a href="contact.html" class="btn btn-secondary">Hubungi Kami</a>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="headline">Solusi Driver Printer Kasir Android Terpraktis</h1>
+                    <p class="subheadline">Cetak struk, dokumen, dan gambar dari HP Android Anda langsung ke printer
+                        kasir
+                        tanpa ribet. Solusi cerdas untuk bisnis masa kini.</p>
+                    <div class="hero-buttons">
+                        <a href="printera.html" class="btn btn-primary">Pelajari PrinterA</a>
+                        <a href="contact.html" class="btn btn-secondary">Hubungi Kami</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/image.webp" alt="Kenzie Tech Hero Image" width="600" height="400"
+                        fetchpriority="high"
+                        style="width: 100%; max-width: 600px; height: auto; border-radius: 24px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15); display: block; margin: 0 auto;">
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="assets/image.webp" alt="Kenzie Tech Hero Image" width="600" height="400" fetchpriority="high"
-                    style="width: 100%; max-width: 600px; height: auto; border-radius: 24px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15); display: block; margin: 0 auto;">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Product Comparison Section -->
-    <section class="products-summary section-padding">
-        <div class="container">
-            <h2 class="section-title text-center">Perbedaan PrinterA dan PrinterL</h2>
-            <div class="product-grid mt-4">
-                <div class="card product-card" style="text-align: center; padding: 48px 32px;">
-                    <div class="card-icon"
-                        style="background: #f0fdf4; padding: 24px; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; margin-bottom: 24px; width: 100px; height: 100px;">
-                        <i class="ph-duotone ph-plug" style="font-size: 48px; color: var(--primary);"></i>
+        <!-- Product Comparison Section -->
+        <section class="products-summary section-padding">
+            <div class="container">
+                <h2 class="section-title text-center">Perbedaan PrinterA dan PrinterL</h2>
+                <div class="product-grid mt-4">
+                    <div class="card product-card" style="text-align: center; padding: 48px 32px;">
+                        <div class="card-icon"
+                            style="background: #f0fdf4; padding: 24px; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; margin-bottom: 24px; width: 100px; height: 100px;">
+                            <i class="ph-duotone ph-plug" style="font-size: 48px; color: var(--primary);"></i>
+                        </div>
+                        <h3>PrinterA</h3>
+                        <div class="badge badge-success mb-3" style="display: inline-block;">ESC/POS Standard</div>
+                        <p style="margin-bottom: 32px;">Sederhana & Plug-and-Play. Solusi praktis mencetak dari
+                            perangkat
+                            Android langsung ke printer kasir dengan command standard ESC/POS.</p>
+                        <div style="display: flex; gap: 16px; justify-content: center;">
+                            <a href="printera.html" class="btn btn-outline" style="padding: 8px 24px;">Lihat Detail</a>
+                        </div>
                     </div>
-                    <h3>PrinterA</h3>
-                    <div class="badge badge-success mb-3" style="display: inline-block;">ESC/POS Standard</div>
-                    <p style="margin-bottom: 32px;">Sederhana & Plug-and-Play. Solusi praktis mencetak dari perangkat
-                        Android langsung ke printer kasir dengan command standard ESC/POS.</p>
-                    <div style="display: flex; gap: 16px; justify-content: center;">
-                        <a href="printera.html" class="btn btn-outline" style="padding: 8px 24px;">Lihat Detail</a>
-                    </div>
-                </div>
-                <div class="card product-card" style="text-align: center; padding: 48px 32px;">
-                    <div class="card-icon"
-                        style="background: #eff6ff; padding: 24px; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; margin-bottom: 24px; width: 100px; height: 100px;">
-                        <i class="ph-duotone ph-faders" style="font-size: 48px; color: #3b82f6;"></i>
-                    </div>
-                    <h3>PrinterL</h3>
-                    <div class="badge mb-3" style="display: inline-block; background-color: #dbeafe; color: #2563eb;">
-                        Multi-Format Command</div>
-                    <p style="margin-bottom: 32px;">Fleksibel untuk berbagai jenis printer. Mendukung berbagai format
-                        data / command type seperti CPCL, TSPL, dan ESC.</p>
-                    <div style="display: flex; gap: 16px; justify-content: center;">
-                        <a href="printerl.html" class="btn btn-outline"
-                            style="padding: 8px 24px; border-color: #3b82f6; color: #3b82f6;">Lihat Detail</a>
+                    <div class="card product-card" style="text-align: center; padding: 48px 32px;">
+                        <div class="card-icon"
+                            style="background: #eff6ff; padding: 24px; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; margin-bottom: 24px; width: 100px; height: 100px;">
+                            <i class="ph-duotone ph-faders" style="font-size: 48px; color: #3b82f6;"></i>
+                        </div>
+                        <h3>PrinterL</h3>
+                        <div class="badge mb-3"
+                            style="display: inline-block; background-color: #dbeafe; color: #2563eb;">
+                            Multi-Format Command</div>
+                        <p style="margin-bottom: 32px;">Fleksibel untuk berbagai jenis printer. Mendukung berbagai
+                            format
+                            data / command type seperti CPCL, TSPL, dan ESC.</p>
+                        <div style="display: flex; gap: 16px; justify-content: center;">
+                            <a href="printerl.html" class="btn btn-outline"
+                                style="padding: 8px 24px; border-color: #3b82f6; color: #3b82f6;">Lihat Detail</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Cara Menemukan Printer (New Section) -->
-    <section class="section-padding bg-soft">
-        <div class="container">
-            <div class="grid-2-cols align-center bg-white"
-                style="border-radius: 24px; padding: 48px; box-shadow: var(--shadow-md); border: 1px solid rgba(0,0,0,0.05);">
-                <div class="text-content">
-                    <div class="badge badge-error">Penting</div>
-                    <h2>Cara Menemukan Printer Yang Benar</h2>
-                    <p>Aplikasi mendeteksi semua perangkat Bluetooth di sekitar. Agar tidak salah pilih, lakukan
-                        <strong>Self-Test Print</strong> pada printer Anda dan cocokkan <strong>MAC Address</strong>
-                        yang tertera di kertas dengan yang ada di aplikasi.
-                    </p>
-                </div>
-                <div class="image-content" style="display: flex; justify-content: center; align-items: center;">
-                    <img src="assets/mockup-struk.webp"
-                        alt="Mockup Self Test Print" width="600" height="400" loading="lazy"
-                        style="width: 100%; max-width: 400px; height: auto; border-radius: 16px; box-shadow: var(--shadow-md);">
+        <!-- Cara Menemukan Printer (New Section) -->
+        <section class="section-padding bg-soft">
+            <div class="container">
+                <div class="grid-2-cols align-center bg-white"
+                    style="border-radius: 24px; padding: 48px; box-shadow: var(--shadow-md); border: 1px solid rgba(0,0,0,0.05);">
+                    <div class="text-content">
+                        <div class="badge badge-error">Penting</div>
+                        <h2>Cara Menemukan Printer Yang Benar</h2>
+                        <p>Aplikasi mendeteksi semua perangkat Bluetooth di sekitar. Agar tidak salah pilih, lakukan
+                            <strong>Self-Test Print</strong> pada printer Anda dan cocokkan <strong>MAC Address</strong>
+                            yang tertera di kertas dengan yang ada di aplikasi.
+                        </p>
+                    </div>
+                    <div class="image-content" style="display: flex; justify-content: center; align-items: center;">
+                        <img src="assets/mockup-struk.webp" alt="Mockup Self Test Print" width="600" height="400"
+                            loading="lazy"
+                            style="width: 100%; max-width: 400px; height: auto; border-radius: 16px; box-shadow: var(--shadow-md);">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Fitur Kunci -->
-    <section class="why-us section-padding">
-        <div class="container">
-            <h2 class="section-title text-center">Fitur Kunci</h2>
-            <div class="features-grid mt-4" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-                <div class="card feature-item" style="padding: 24px; text-align: left;">
-                    <img src="assets/fitur-autoprint.webp"
-                        onerror="this.src='https://placehold.co/400x250/f8fafc/94a3b8?text=Screenshot+Auto-Print'"
-                        alt="Screenshot Auto Print" width="400" height="250" loading="lazy"
-                        style="width: 100%; height: 160px; object-fit: contain; border-radius: 8px; margin-bottom: 20px; background: #f8fafc; border: 1px solid #e2e8f0;">
-                    <h3 style="margin-bottom: 12px; font-size: 1.125rem;"><i class="ph-fill ph-lightning"
-                            style="color: var(--primary); margin-right: 8px; vertical-align: middle;"></i>Cetak Langsung
-                    </h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Sekali klik icon printer, cetak langsung
-                        berjalan tanpa konfirmasi ulang.</p>
-                </div>
-                <div class="card feature-item" style="padding: 24px; text-align: left;">
-                    <img src="assets/fitur-lebarkertas.webp"
-                        onerror="this.src='https://placehold.co/400x250/f8fafc/94a3b8?text=Screenshot+Lebar+Kertas'"
-                        alt="Screenshot Lebar Kertas" width="400" height="250" loading="lazy"
-                        style="width: 100%; height: 160px; object-fit: contain; border-radius: 8px; margin-bottom: 20px; background: #f8fafc; border: 1px solid #e2e8f0;">
-                    <h3 style="margin-bottom: 12px; font-size: 1.125rem;"><i class="ph-fill ph-ruler"
-                            style="color: var(--primary); margin-right: 8px; vertical-align: middle;"></i>Presisi Kertas
-                    </h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Dukungan Kertas lebar 80mm dengan area
-                        cetak maksimal 72mm.</p>
-                </div>
-                <div class="card feature-item" style="padding: 24px; text-align: left;">
-                    <img src="assets/fitur-bahasa.webp"
-                        onerror="this.src='https://placehold.co/400x250/f8fafc/94a3b8?text=Screenshot+Bahasa'"
-                        alt="Screenshot Bahasa" width="400" height="250" loading="lazy"
-                        style="width: 100%; height: 160px; object-fit: contain; border-radius: 8px; margin-bottom: 20px; background: #f8fafc; border: 1px solid #e2e8f0;">
-                    <h3 style="margin-bottom: 12px; font-size: 1.125rem;"><i class="ph-fill ph-globe"
-                            style="color: var(--primary); margin-right: 8px; vertical-align: middle;"></i>60 Pilihan
-                        Bahasa</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Mendukung lebih dari 60 pilihan bahasa
-                        untuk kemudahan navigasi.</p>
-                </div>
-                <div class="card feature-item" style="padding: 24px; text-align: left;">
-                    <img src="assets/fitur-androidgo.webp"
-                        onerror="this.src='https://placehold.co/400x250/f8fafc/94a3b8?text=Screenshot+Android+GO'"
-                        alt="Screenshot Android GO" width="400" height="250" loading="lazy"
-                        style="width: 100%; height: 160px; object-fit: contain; border-radius: 8px; margin-bottom: 20px; background: #f8fafc; border: 1px solid #e2e8f0;">
-                    <h3 style="margin-bottom: 12px; font-size: 1.125rem;"><i class="ph-fill ph-shield-check"
-                            style="color: var(--primary); margin-right: 8px; vertical-align: middle;"></i>Izin Android
-                        GO</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Penyesuaian izin khusus untuk ekosistem
-                        Android GO secara aman.</p>
+        <!-- Fitur Kunci -->
+        <section class="why-us section-padding">
+            <div class="container">
+                <h2 class="section-title text-center">Fitur Kunci</h2>
+                <div class="features-grid mt-4" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                    <div class="card feature-item" style="padding: 24px; text-align: left;">
+                        <img src="assets/fitur-autoprint.webp"
+                            onerror="this.src='https://placehold.co/400x250/f8fafc/94a3b8?text=Screenshot+Auto-Print'"
+                            alt="Screenshot Auto Print" width="400" height="250" loading="lazy"
+                            style="width: 100%; height: 160px; object-fit: contain; border-radius: 8px; margin-bottom: 20px; background: #f8fafc; border: 1px solid #e2e8f0;">
+                        <h3 style="margin-bottom: 12px; font-size: 1.125rem;"><i class="ph-fill ph-lightning"
+                                style="color: var(--primary); margin-right: 8px; vertical-align: middle;"></i>Cetak
+                            Langsung
+                        </h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Sekali klik icon printer, cetak
+                            langsung
+                            berjalan tanpa konfirmasi ulang.</p>
+                    </div>
+                    <div class="card feature-item" style="padding: 24px; text-align: left;">
+                        <img src="assets/fitur-lebarkertas.webp"
+                            onerror="this.src='https://placehold.co/400x250/f8fafc/94a3b8?text=Screenshot+Lebar+Kertas'"
+                            alt="Screenshot Lebar Kertas" width="400" height="250" loading="lazy"
+                            style="width: 100%; height: 160px; object-fit: contain; border-radius: 8px; margin-bottom: 20px; background: #f8fafc; border: 1px solid #e2e8f0;">
+                        <h3 style="margin-bottom: 12px; font-size: 1.125rem;"><i class="ph-fill ph-ruler"
+                                style="color: var(--primary); margin-right: 8px; vertical-align: middle;"></i>Presisi
+                            Kertas
+                        </h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Dukungan Kertas lebar 80mm dengan area
+                            cetak maksimal 72mm.</p>
+                    </div>
+                    <div class="card feature-item" style="padding: 24px; text-align: left;">
+                        <img src="assets/fitur-bahasa.webp"
+                            onerror="this.src='https://placehold.co/400x250/f8fafc/94a3b8?text=Screenshot+Bahasa'"
+                            alt="Screenshot Bahasa" width="400" height="250" loading="lazy"
+                            style="width: 100%; height: 160px; object-fit: contain; border-radius: 8px; margin-bottom: 20px; background: #f8fafc; border: 1px solid #e2e8f0;">
+                        <h3 style="margin-bottom: 12px; font-size: 1.125rem;"><i class="ph-fill ph-globe"
+                                style="color: var(--primary); margin-right: 8px; vertical-align: middle;"></i>60 Pilihan
+                            Bahasa</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Mendukung lebih dari 60 pilihan bahasa
+                            untuk kemudahan navigasi.</p>
+                    </div>
+                    <div class="card feature-item" style="padding: 24px; text-align: left;">
+                        <img src="assets/fitur-androidgo.webp"
+                            onerror="this.src='https://placehold.co/400x250/f8fafc/94a3b8?text=Screenshot+Android+GO'"
+                            alt="Screenshot Android GO" width="400" height="250" loading="lazy"
+                            style="width: 100%; height: 160px; object-fit: contain; border-radius: 8px; margin-bottom: 20px; background: #f8fafc; border: 1px solid #e2e8f0;">
+                        <h3 style="margin-bottom: 12px; font-size: 1.125rem;"><i class="ph-fill ph-shield-check"
+                                style="color: var(--primary); margin-right: 8px; vertical-align: middle;"></i>Izin
+                            Android
+                            GO</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Penyesuaian izin khusus untuk ekosistem
+                            Android GO secara aman.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     </main>
 
     <!-- Footer -->

@@ -136,7 +136,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Open modal on image click
         stepImages.forEach(img => {
-            img.style.cursor = 'zoom-in'; // Added cursor style for UX
             img.addEventListener('click', () => {
                 modalImg.src = img.src;
                 modal.classList.add('active');
